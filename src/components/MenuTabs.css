@@ -108,10 +108,17 @@
   /* Responsive Design */
   @media (max-width: 600px) {
     .menu-items {
-      flex-direction: column; /* Keep vertical layout */
-      padding:20px;
-      
-    }
+      display: flex;
+      flex-direction: column; /* Stack items vertically */
+      padding: 20px; /* Ensure consistent padding */
+      gap: 10px; /* Add space between menu items */
+  }
+
+  .menu-items > * {
+      margin: 0; /* Reset any default margins */
+      padding: 10px; /* Add padding inside each menu item */
+      box-sizing: border-box; /* Include padding in width/height calculations */
+  }
   
     .menu-item {
       flex-direction: column; /* Stack content for smaller screens */
