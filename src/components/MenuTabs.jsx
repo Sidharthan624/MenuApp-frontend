@@ -15,7 +15,7 @@ const MenuTabs = () => {
   useEffect(() => {
     const fetchMenus = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/api/menus");
+        const response = await axios.get("https://MenuApp-backend.com/api/menus");
         const menus = response.data;
 
       

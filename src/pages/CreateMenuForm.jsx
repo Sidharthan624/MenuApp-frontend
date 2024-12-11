@@ -29,14 +29,14 @@ const CreateMenuForm = () => {
     e.preventDefault();
 
     try {
-      const menuResponse = await axios.post("http://localhost:5000/api/menus", {
+      const menuResponse = await axios.post("https://MenuApp-backend.com/api/menus", {
         name: menuName,
       });
 
       const menuId = menuResponse.data._id;
 
       for (const item of items) {
-        await axios.post(`http://localhost:5000/api/menus/${menuId}/items`, item);
+        await axios.post(`https://MenuApp-backend.com/api/menus/${menuId}/items`, item);
       }
 
       alert("Menu created successfully!");
