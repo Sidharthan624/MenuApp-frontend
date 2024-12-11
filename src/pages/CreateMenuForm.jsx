@@ -29,7 +29,7 @@ const CreateMenuForm = () => {
     e.preventDefault();
 
     try {
-      const menuResponse = await axios.post("https://menuapp-backend-0q8t.onrender.com.com/api/menus", {
+      const menuResponse = await axios.post("https://menuapp-backend-0q8t.onrender.com/api/menus", {
         name: menuName,
       });
 
