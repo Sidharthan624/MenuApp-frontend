@@ -1,0 +1,75 @@
+/* Hero Section Styles */
+.hero {
+    position: relative;
+    height: 80vh; /* Adjust height as needed */
+    background: url('https://i.pinimg.com/736x/24/a1/c5/24a1c58e10f311a2e2f491f78d1334c7.jpg') no-repeat center center/cover; /* Replace URL with your image */
+    display: flex;
+    width:100%;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    overflow: hidden;
+    
+  }
+  
+  /* Dark overlay for better text readability */
+  .hero-overlay {
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent black overlay */
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+  .hero-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .hero-description {
+    font-size: 1.2rem;
+    margin-top: 50px;
+    max-width: 600px;
+    line-height: 1.5;
+  }
+  
+  .hero-button {
+    background-color: #0f0e0e; /* Coral button color */
+    color: #fff;
+    border-color: #506dff;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 50px;
+  }
+  
+  .hero-button:hover {
+    background-color: #3369ff; /* Darker coral on hover */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .hero-title {
+      font-size: 2.5rem;
+    }
+  
+    .hero-description {
+      font-size: 1rem;
+    }
+  
+    .hero-button {
+      font-size: 0.9rem;
+      padding: 8px 15px;
+    }
+  }
+  

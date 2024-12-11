@@ -1,0 +1,94 @@
+/* Footer Styles */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch; /* Stretch items for equal height */
+    padding: 20px;
+    background-color: #33333300; /* Slight opacity for better contrast */
+    color: white;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    margin-top: 100px;
+    border-radius: 20px;
+    gap: 15px; /* Consistent spacing between items */
+}
+
+/* Footer Item Styling */
+.footer-item {
+    flex: 1;
+    padding: 15px; /* Increased padding for better spacing */
+    min-width: 220px; /* Uniform width for all items */
+    min-height: 150px; /* Ensures consistent height for all items */
+    text-align: center; /* Center-align text for consistency */
+    border-radius: 20px;
+    border: 2px solid blue;
+    background-color: rgba(0, 0, 0, 0.8); /* Added subtle background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Consistent shadow for all items */
+    position: relative; /* Required for the protruding logo */
+}
+
+/* Footer Item Headings */
+.footer-item h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #5076ff;
+}
+
+/* Footer Item Paragraphs */
+.footer-item p {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+/* Social Icons Styling */
+.social-icons {
+    margin-top: 90px; /* Push icons to the bottom of the container */
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 20px;
+    transition: color 0.3s ease, transform 0.3s ease;
+    margin:10px;
+}
+
+.social-icons a:hover {
+    color: #ff7f50;
+    transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+/* Logo Styling */
+.footer-logo {
+    max-width: 450px; /* Larger size for the protruding effect */
+    height: auto;
+    position: absolute; /* Position the logo absolutely */
+    top: -40px; /* Adjust this value to control how much it protrudes */
+    left: 50%;
+    transform: translateX(-50%); /* Centers the logo horizontally */
+    z-index: 10; /* Ensures the logo appears on top */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column; /* Stack footer items vertically */
+        align-items: center;
+        gap: 20px; /* Consistent spacing in mobile view */
+    }
+
+    .footer-item {
+        margin-bottom: 15px; /* Add spacing between stacked items */
+        width: 90%; /* Adjusts the width for smaller screens */
+    }
+
+    .footer-item:last-child {
+        margin-bottom: 0; /* Remove extra margin for last item */
+    }
+
+    .footer-logo {
+        top: 20px; /* Adjust protruding effect for smaller screens */
+        max-width: 200px; /* Reduce size for mobile */
+    }
+}
